@@ -8,6 +8,14 @@ A responsive, single-page marketing site for a small web studio, available in **
 
 <p align="center"><img src="docs/mobile.jpg" alt="Mobile preview" width="260"></p>
 
+## 📖 Background
+
+This is the template version of the promotional website I built for a small web-design startup I co-run with a partner. The studio builds websites, product dashboards and online stores for small local businesses, with a focus on community languages (hence the Somali, Arabic and Norwegian versions).
+
+- **My role:** front-end development and the technical delivery of the site: layout, accessibility, the translation system (including right-to-left Arabic), the WhatsApp enquiry flow and deployment on Cloudflare Pages.
+- **What's real and what's a demo:** The site, language switching and enquiry form are real. The dashboard and checkout previews are design illustrations only. There is no backend or payment processing.
+- **Why it's public:** It shows how I structure a small, dependency-free multilingual site. Names, contact details and images have been replaced with placeholders.
+
 ## 🚀 Key Features
 
 - **4 languages with live switching:** Translation strings live in `i18n.js` and the choice is remembered in `localStorage`. Arabic switches the whole layout to right-to-left.
