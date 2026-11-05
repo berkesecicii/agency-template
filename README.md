@@ -1,19 +1,30 @@
-# Agency Website Template
+# Multilingual Agency Website Template
 
-A multilingual, single-page marketing site for a small web studio — built with plain HTML, CSS and vanilla JavaScript. No framework, no build step.
+A responsive, single-page marketing site for a small web studio, available in **English, Somali, Arabic (RTL) and Norwegian**. Built with plain HTML, CSS and vanilla JavaScript — no framework and no build step.
 
-> All names, contact details and images are fictional placeholders. Replace them before using this for a real business.
+> All names, contact details and images are fictional placeholders.
 
-## Features
+![Desktop preview](docs/desktop.jpg)
 
-- **4 languages** — English, Somali, Arabic (full RTL layout) and Norwegian, switched client-side via `i18n.js` and remembered in `localStorage`
-- **Package & pricing section** with a responsive layout down to small phones
-- **Interactive concept previews** — a product-dashboard demo and an e-commerce checkout demo (illustrations only, no real backend or payments)
-- **WhatsApp enquiry form** — builds a pre-filled message in the browser; nothing is sent to a server
-- **Local SVG flags** (avoids the Windows emoji-flag rendering issue)
-- Accessible markup: semantic landmarks, labelled controls, `aria-live` regions, keyboard-friendly dialogs
+<p align="center"><img src="docs/mobile.jpg" alt="Mobile preview" width="260"></p>
 
-## Project structure
+## 🚀 Key Features
+
+- **4 languages with live switching:** Translation strings live in `i18n.js` and the choice is remembered in `localStorage`. Arabic switches the whole layout to right-to-left.
+- **Interactive concept previews:** A product-dashboard demo and an e-commerce checkout demo (illustrations only — no real backend or payments).
+- **WhatsApp enquiry form:** Builds a pre-filled message in the browser; nothing is sent to a server.
+- **Packages & pricing section** that stays readable down to small phones.
+- **Local SVG flags** instead of emoji flags (avoids the Windows emoji-flag rendering bug).
+- **Accessibility:** semantic landmarks, labelled controls, `aria-live` status messages and keyboard-friendly dialogs.
+
+## 💻 Technology Stack
+
+- **Languages:** HTML5, CSS3, JavaScript (ES6+)
+- **Internationalisation:** custom `i18n.js` with RTL support
+- **Hosting:** any static host (built for Cloudflare Pages, includes a `_headers` file)
+- **Tools:** Git, no bundler
+
+## 📁 Project Structure
 
 ```
 index.html   page markup
@@ -21,27 +32,25 @@ styles.css   styles
 app.js       interactions (form, demos, language bar)
 i18n.js      translation strings (EN | SO | AR | NO)
 assets/      SVG flags/mark and placeholder images
-_headers     Cloudflare Pages security headers
+_headers     security headers for Cloudflare Pages
 ```
 
-## Run locally
+## 🛠️ Run Locally
 
 ```bash
 python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
-## Deploy
-
-Static files only — works on Cloudflare Pages, Netlify, GitHub Pages, etc. Upload the folder contents as-is.
-
-## Customise
+## ✏️ Customise
 
 1. Set your WhatsApp number in `app.js` (`WA_PHONE`) and in the links in `index.html`.
 2. Replace the example email addresses in `index.html`.
-3. Edit copy in `index.html` and the matching entries in `i18n.js` (English text is the lookup key).
+3. Edit copy in `index.html` and the matching entries in `i18n.js` (the English text is the lookup key).
 4. Swap the placeholder images in `assets/`.
 
-## License
+This project shows how I approach a small, fast and accessible multilingual site without any dependencies.
+
+## 📄 License
 
 MIT — see [LICENSE](LICENSE).
